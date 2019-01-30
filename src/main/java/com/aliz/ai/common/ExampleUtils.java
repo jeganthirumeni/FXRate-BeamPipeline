@@ -102,7 +102,7 @@ public class ExampleUtils {
     try {
       do {
         try {
-          setupPubsub();
+          //setupPubsub();
           setupBigQueryTable();
           return;
         } catch (GoogleJsonResponseException e) {
