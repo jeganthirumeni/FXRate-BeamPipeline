@@ -62,5 +62,4 @@ Each pipeline submitted to Dataflow runner will have monitoring UI like below wh
 ![MonitorLogs](monitorlogs.png)  
   #### Output :
   
-  TODO : Include the sample input & output details
-
+![Sample output](sampleoutput.png)
