@@ -50,5 +50,7 @@ java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxra
 
 ###Job Monitoring :
 
-Goto to Google job monitoring link https://console.cloud.google.com/dataflow?project=<project-id> to check the status of the job. The application monitoring link are available in the above script logs as well.
+Goto to Google job monitoring link https://console.cloud.google.com/dataflow?project=project-id to check the status of the job. The application monitoring link are available in the above script logs as well.
+
+![Monitoring](googlecloud.png)
 
