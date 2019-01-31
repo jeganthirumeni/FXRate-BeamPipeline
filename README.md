@@ -10,11 +10,17 @@ Developed a solution in Java to read the file and generate index file for the in
 
 #### Assumptions :
 
-* Each line is terminated by new line and each word is seprated by white space.
-* Index is created as case-insensitive. i.e apple & Apple are considered as one word in the output index i.e apple
-* Special characters like !+.^:, are not required as part of the index file.
+* Maven & Java 1.8 is installed in the machine
 
 #### To run the Program :
+
+1. Create a Google cloud platform project & enable billing
+2. Enable the Cloud Dataflow, Compute Engine, Stackdriver Logging, Google Cloud Storage, BigQuery.
+3. Create a Service Account Key for the project and download the Json in local
+4. Create a cloud storage bucket and create two folders i.e temp & stage that will be used during the pipeline execution.
+5. clone this project in local and run `mvn clean install` inside the project folder which will create a shaded jar with all the necessary dependencies inside targe folder.
+6. Run the below shell script to execute the pipeline
+
 
 ##### Shell Command to execute the Pipeline :
 ```shell
@@ -37,8 +43,8 @@ java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxra
 --project=jeganhadoopcluster \
 --tempLocation=gs://aliz-tech-challenge/temp \
 --stagingLocation=gs://aliz-tech-challenge/staging \
---bigQueryDataset=aliz1 \
---bigQueryTable=fxrateAverage1 \
+--bigQueryDataset=aliz \
+--bigQueryTable=fxrateAverage \
 --inputFile=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
 ```
 
