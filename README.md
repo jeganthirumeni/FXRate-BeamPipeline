@@ -20,7 +20,7 @@ Developed a Beam Pipeline using Java to read from the file in google cloud stora
 3. Create a Service Account Key for the project and download the Json in local
 4. Create a cloud storage bucket and create two folders i.e temp & stage that will be used during the pipeline execution.
 5. clone this project in local and run `mvn clean install` inside the project folder which will create a shaded jar with all the necessary dependencies inside targe folder.
-6. Run the below shell script to execute the pipeline
+6. Run the below shell script to execute the pipeline. The shaded jar is available inside target folder
 
 
 ##### Shell Command to execute the Pipeline :
