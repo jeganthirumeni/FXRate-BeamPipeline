@@ -48,9 +48,17 @@ java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxra
 --inputFile=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
 ```
 
-###Job Monitoring :
+### Job Monitoring :
 
 Goto to Google job monitoring link https://console.cloud.google.com/dataflow?project=project-id to check the status of the job. The application monitoring link are available in the above script logs as well.
 
 ![Monitoring](googlecloud.PNG)
+
+#### Sample Job Monitoring  UI:
+
+<TODO : ADD THE IMAGE OF ANY OF THE JOB>
+  
+  #### Output :
+  
+  <TODO : Include the sample input & output details>
 
