@@ -5,5 +5,8 @@ java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxra
 --tempLocation=gs://aliz-tech-challenge/temp \
 --stagingLocation=gs://aliz-tech-challenge/staging \
 --bigQueryDataset=aliz1 \
---bigQueryTable=fxrate_average \
---input=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
+--bigQueryTable=fxrateAverage1 \
+--inputFile=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
+
+
+

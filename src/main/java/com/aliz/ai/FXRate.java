@@ -231,7 +231,6 @@ public class FXRate {
 	// TODO : updated the input file
 	public interface FXRateOptions extends ExampleOptions, ExampleBigQueryTableOptions {
 		@Description("Path of the file to read from")
-		@Default.String("gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv")
 		String getInputFile();
 
 		void setInputFile(String value);

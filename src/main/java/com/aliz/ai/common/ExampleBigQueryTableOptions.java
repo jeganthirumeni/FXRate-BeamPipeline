@@ -30,12 +30,10 @@ import org.apache.beam.sdk.options.PipelineOptions;
  */
 public interface ExampleBigQueryTableOptions extends GcpOptions {
   @Description("BigQuery dataset name")
-  @Default.String("aliz1")
   String getBigQueryDataset();
   void setBigQueryDataset(String dataset);
 
   @Description("BigQuery table name")
-  @Default.InstanceFactory(BigQueryTableFactory.class)
   String getBigQueryTable();
   void setBigQueryTable(String table);
 
