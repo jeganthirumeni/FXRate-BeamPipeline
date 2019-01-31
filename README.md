@@ -2,7 +2,8 @@
 
 ## Problem Statement :
 
-TODO : ADD THE Problem statement
+Write a Beam pipeline which calculates the average spread of the GPB-USD exchange rate in 10 minutes sliding windows with 1 minute steps. The pipeline should read data from Cloud Storage and write the results into BigQuery.
+Use this file as input: gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
 
 ## Solution :
 
