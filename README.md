@@ -57,8 +57,9 @@ Goto to Google job monitoring link https://console.cloud.google.com/dataflow?pro
 
 #### Sample Job Monitoring  UI:
 
-TODO : ADD THE IMAGE OF ANY OF THE JOB
-  
+Each pipeline submitted to Dataflow runner will have monitoring UI like below which gives details about the pipeline stages and the logs.
+
+![MonitorLogs](monitorlogs.png)  
   #### Output :
   
   TODO : Include the sample input & output details
