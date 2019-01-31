@@ -16,7 +16,22 @@ Developed a solution in Java to read the file and generate index file for the in
 
 #### To run the Program :
 
-`export GOOGLE_APPLICATION_CREDENTIALS="/Users/jegadeshthirumeni/Downloads/credentials.json"
+##### Shell Command to execute the Pipeline :
+```shell
+export GOOGLE_APPLICATION_CREDENTIALS=<path to google cloud service account key>
+java -jar ./target/fxrate-pipeline-bundled-1.0.0.jar \
+--runner=DataflowRunner \
+--project=<project-id> \
+--tempLocation=<Google storage temp location> \
+--stagingLocation=<Google storage staging location> \
+--bigQueryDataset=<Bigquery Output Dataset Name> \
+--bigQueryTable=<Bigquery Output Table Name> \
+--inputFile=<input file path>
+```
+##### Sample Shell Command to execute the Pipeline :
+
+```shell
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/jegadeshthirumeni/Downloads/credentials.json"
 java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxrate-pipeline-bundled-1.0.0.jar \
 --runner=DataflowRunner \
 --project=jeganhadoopcluster \
@@ -24,7 +39,8 @@ java -jar /Users/jegadeshthirumeni/eclipse-workspace/fxrate-pipeline/target/fxra
 --stagingLocation=gs://aliz-tech-challenge/staging \
 --bigQueryDataset=aliz1 \
 --bigQueryTable=fxrateAverage1 \
---inputFile=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv`
+--inputFile=gs://solutions-public-assets/time-series-master/GBPUSD_2014_01.csv
+```
 
 
 
