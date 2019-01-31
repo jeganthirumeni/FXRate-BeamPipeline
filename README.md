@@ -7,7 +7,7 @@ Use this file as input: gs://solutions-public-assets/time-series-master/GBPUSD_2
 
 ## Solution :
 
-Developed a Beam Pipelin using Java to read from the file in google cloud storage, calculate the moving average through various PTransforms and save the output in Google Bigquery.
+Developed a Beam Pipeline using Java to read from the file in google cloud storage, calculate the moving average through various PTransforms and saves the output in Google Bigquery.
 
 #### Assumptions :
 
