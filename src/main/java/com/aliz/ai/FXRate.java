@@ -283,7 +283,7 @@ public class FXRate {
 	public static void main(String[] args) throws IOException {
 		FXRateOptions options = PipelineOptionsFactory.fromArgs(args).withValidation().as(FXRateOptions.class);
 		options.setBigQuerySchema(FormatFxRate.getSchema());
-		options.setTempLocation("gs://aliz-tech-challenge/temp");
+		//options.setTempLocation("gs://aliz-tech-challenge/temp");
 		runFXRate(options);
 	}
 
