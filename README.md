@@ -2,11 +2,11 @@
 
 ## Problem Statement :
 
-There is a given input textfile (ASCII). Please create an application, that makes a new file ending with -"index.txt". To the index write every word in a new line, in alphabetical order, that occurs in the textfile. After each word please display in which line in the original textfile did the word appear. Separate the numbers with commas.
+TODO : ADD THE Problem statement
 
-### Solution :
+## Solution :
 
-Developed a solution in Java to read the file and generate index file for the input.
+Developed a Beam Pipelin using Java to read from the file in google cloud storage, calculate the moving average through various PTransforms and save the output in Google Bigquery.
 
 #### Assumptions :
 
@@ -56,9 +56,9 @@ Goto to Google job monitoring link https://console.cloud.google.com/dataflow?pro
 
 #### Sample Job Monitoring  UI:
 
-<TODO : ADD THE IMAGE OF ANY OF THE JOB>
+TODO : ADD THE IMAGE OF ANY OF THE JOB
   
   #### Output :
   
-  <TODO : Include the sample input & output details>
+  TODO : Include the sample input & output details
 
