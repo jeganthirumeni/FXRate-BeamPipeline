@@ -183,24 +183,16 @@ public class FXRate {
 		}
 	}
 
-	/**
-	 * This PTransform extracts speed info from traffic station readings. It groups
-	 * the readings by 'route' and analyzes traffic slowdown for that route. Lastly,
-	 * it formats the results for BigQuery.
-	 */
 	static class FXRateAverage extends PTransform<PCollection<KV<String, FXRateInfo>>, PCollection<TableRow>> {
 		private static final long serialVersionUID = 1L;
 
 		@Override
 		public PCollection<TableRow> expand(PCollection<KV<String, FXRateInfo>> fxRateInfo) {
-			// Apply a GroupByKey transform to collect a list of all station
-			// readings for a given route.
+			
 			PCollection<KV<String, Iterable<FXRateInfo>>> timegrouping = fxRateInfo.apply(GroupByKey.create());
 
-			// Analyze 'slowdown' over the route readings.
 			PCollection<KV<String, FXRateInfo>> groupingStats = timegrouping.apply(ParDo.of(new GatherAverage()));
 
-			// Format the results for writing to BigQuery
 			PCollection<TableRow> results = groupingStats.apply(ParDo.of(new FormatFxRate()));
 
 			return results;
@@ -222,13 +214,6 @@ public class FXRate {
 		}
 	}
 
-	/**
-	 * Options supported by {@link TrafficRoutes}.
-	 *
-	 * <p>
-	 * Inherits standard configuration options.
-	 */
-	// TODO : updated the input file
 	public interface FXRateOptions extends ExampleOptions, ExampleBigQueryTableOptions {
 		@Description("Path of the file to read from")
 		String getInputFile();
